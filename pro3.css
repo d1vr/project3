@@ -1,0 +1,161 @@
+@media (prefers-reduced-motion: no-preference) {
+* {
+scroll-behavior: smooth;
+}
+}
+
+html {
+  background: #ffffff8f;
+  font-family: 'Plus Jakarta Sans',sans-serif;
+  color: #016583ef;
+  line-height: 2rem;
+  letter-spacing: 0.01rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+}
+
+#navbar {
+  position: fixed;
+  background-color: #ffffff6c;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 300px;
+  min-width: 300px;
+  height: 100%;
+  border-right: 2px #0a7494;
+;
+}
+
+nav > header {
+  margin: 10px;
+  text-align: center;
+}
+#navbar ul{
+  height: 90%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 10px;
+  border-top: 2px solid #0a7494;
+  position: relative;
+}
+#navbar li:last-of-type {
+  border-bottom: 2px solid #064057;
+  position: relative;
+}
+
+#navbar a{
+  color: #064057;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 30;
+  display: block;
+}
+
+#navbar a:hover {
+  transform: scale(1.1);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #016583ef;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  margin: 30px;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+article ul {
+  font-weight: 200;
+}
+
+pre code {
+  background-color: #eee;
+  display: block;
+  padding: 20px;
+  border-radius: 7px;
+  position: relative;
+  white-space: pre-line;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+section > .description::after {
+  display: inline-block;
+  content:"";
+  outline-style: solid;
+  outline-color: #135a76;
+  width: 80%;
+}
+
+
+p {
+  font-weight: 200;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+
+@media only screen and (max-width: 815px) {
+ 
+  #navbar ul{
+    border: 2px solid;
+    height: 145px;
+  }
+
+.nav-link::-webkit-scrollbar-thumb:vertical {
+  -webkit-appearance: none;
+  height: 7px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 250px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+  }
+
+}
